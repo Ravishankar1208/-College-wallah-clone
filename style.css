@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #333;
+    line-height:1.5;
+}
+header{
+    width: 100%;
+    height: 14vh;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+}
+nav{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    max-width: 90vw;
+}
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(79, 79, 228);
+    
+}
+
+.logo img {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: blue;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+.nav-link a:hover,
+.nav-link a:active{
+    color: #1a73e8;
+}
+.nav-link a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 700;
+    padding: 0.5rem;
+}
+
+
+.nav-buttons{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+}
+.nav-buttons .login-btn {
+    padding: 0.5rem 1.5rem;
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 900;
+    border-radius: 5px;
+}
+.login-btn:hover{
+    background-color: rgb(185, 185, 239);
+}
+.register-btn{
+    padding: 0.5rem 1.5rem;
+    background-color: #1a73e8;
+    text-decoration: none;
+    font-weight: 900;
+    border-radius: 5px;
+    color: #fff;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #1a73e8;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+    gap: 2rem;
+}
+.hero1{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+
+}
+.hero1 h1{
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+}
+.hero1 p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.sus-btn{
+    padding: 1rem 2rem;
+    background-color: #fff;
+    color:#1a73e8 ;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight:700 ;
+}
+.sus-btn:hover{
+    background-color: #f0f4fe;
+}
+.hero2{
+    width: 100%;
+    max-width: 85vw;
+    padding: 0 1rem;
+    margin-top: 2rem;
+    color: #fff;
+}
+.hero2 h2{
+    color: #fff;
+    font-size: 2rem;
+}
+
+.hero-course{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:1.5rem ;
+}
+.hero-course-name{
+    background-color:rgb(255, 255, 255, 0.1) ;
+    border-radius: 5px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255, 0.2)
+}
+/*.hero-course-name{
+    width: 50px;
+    height: 50px;
+    background-color:rgb(255, 255, 255, 0.2) ;
+    border-radius: 25px;
+}*/
+.hero-course-name i{
+    font-size: 1.2rem;
+    color: #fff;
+}
+.hero-course-name h3{
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-size: 0.86rem;
+}
+.hero-course-name p{
+    color: #fff;
+    margin-bottom:0.5rem ;
+    font-size: 0.86rem;
+    
+}
+footer{
+     align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+    width: 100%;
+    max-width: 90vw;
+    border: #fff;
+    flex-direction: column;
+    padding-top: 2.5rem;
+
+
+}
+
+.h3-last{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: black;
+}
+
+.p-butoom{
+    font-size: 0.86rem;
+    color: black;
+     align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    max-width: 45vw;
+
+}
+.foot-last{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+    width: 100%;
+    max-width: 80vw;
+    margin-top: 50px;
+
+}
+.last{
+    background-color: rgb(239, 232, 232);
+    height: 170px;
+    width: 250px;
+    text-align: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-top: 20px;
+    margin-bottom: 150px;
+}
+@media screen and (max-width: 768px) {
+    .hero-course {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
